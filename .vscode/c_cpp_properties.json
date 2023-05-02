@@ -1,0 +1,35 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/mds2/catkin_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/mds2/robot_ws/install/velodyne_pointcloud/include/**",
+        "/home/mds2/robot_ws/install/velodyne_driver/include/**",
+        "/home/mds2/robot_ws/install/velodyne_msgs/include/**",
+        "/home/mds2/robot_ws/install/velodyne_laserscan/include/**",
+        "/home/mds2/robot_ws/install/v4l2_camera/include/**",
+        "/home/mds2/robot_ws/install/ublox_gps/include/**",
+        "/home/mds2/robot_ws/install/ublox_msgs/include/**",
+        "/home/mds2/robot_ws/install/ublox_serialization/include/**",
+        "/home/mds2/robot_ws/install/lidar_camera_fusion/include/**",
+        "/home/mds2/robot_ws/install/av_toolkit_custom_msgs/include/**",
+        "/home/mds2/robot_ws/install/ackermann_msgs/include/**",
+        "/home/mds2/catkin_ws/src/ublox_f9p/ublox_gps/include/**",
+        "/home/mds2/catkin_ws/src/ublox_f9p/ublox_msgs/include/**",
+        "/home/mds2/catkin_ws/src/ublox_f9p/ublox_serialization/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
