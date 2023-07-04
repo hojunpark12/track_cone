@@ -1,0 +1,5 @@
+# Configuration Settings for GNSS ID
+
+ntrip_server: RTS1.ngii.go.kr:2101
+ntrip_user: mdsmds2023
+ntrip_pass: ngii

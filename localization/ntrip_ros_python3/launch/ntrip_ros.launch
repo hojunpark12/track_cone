@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+	<!-- set param -->
+	<!-- base station name -->
+	<arg name="rtcm_topic" value="/ublox_gps/rtcm" />
+	
+	<!-- rtcm 31 node -->
+	<node pkg="ntrip_ros" type="ntripclient.py" name="ntrip_ros31"
+		  output="screen" 
+		  respawn="true" 
+		  respawn_delay="30">
+		<param name="rtcm_topic" value="$(arg rtcm_topic)" />
+		<param name="ntrip_stream" value="VRS-RTCM31"/>
+		<param name="nmea_gga" value="$GPGGA,080403.375,3737.904,N,12704.553,E,1,12,1.0,0.0,M,0.0,M,,*6E"/>
+		<rosparam command="load" 
+				file="$(find ntrip_ros)/config/ID.yaml" />
+	</node>
+</launch>

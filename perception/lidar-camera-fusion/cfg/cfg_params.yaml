@@ -1,0 +1,32 @@
+#camera_matrix: [284.5971069335938, 0.000000, 329.8077532406824, 0.000000,
+#0.000000, 248.4765014648438, 1.7626853707116, 0.000000,
+#0.000000, 0.000000, 1.000000, 0.000000,]
+camera_matrix: [381.76733398,   0.,         304.33484779, 0.000000,
+  0. ,        454.44692993, 170.57858304, 0.000000,
+  0.000000, 0.000000, 1.000000, 0.000000]
+
+#fx = x direction torsion (axis of center line) - torsion up, + torsion down fx = fy / 1.0051
+#fy = y direction torsion (axis of center line) - torsion up, + torsion down fy = fx*1.0051
+#cx = zoom rotation (axis of center line), 
+#cy = zoom in ( + zoom out , - zoom in ), fy = cy * 1.7363
+#camera_matrix is coordinate of "image itself"
+#camera_matrix is not useful for editing pointcloud, only for image itself
+
+#rlc: [ 0.76604444 , 0.00000,  0.64278761,
+#  0.21984631,  0.93969262, -0.26200263,
+# -0.60402277 , 0.34202014 , 0.71984631]
+
+rlc : [   0.8660254 ,  0.        ,  0.5  ,
+   0.17101007,  0.93969262, -0.29619813 ,
+  -0.46984631,  0.34202014,  0.81379768]
+
+
+tlc: [0.62088457, 0.36858316, 0.87197982]
+#tlc: [+0.83739,+0.57989,+0.23896]
+#0.63000
+#0.23896, -0.83739, -0.57989
+
+
+## +x 왼쪽으로 +y
+## +y 밑으로 -z 
+## +z 뒤로 -x
