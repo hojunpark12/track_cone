@@ -74,7 +74,6 @@ if __name__ == '__main__':
     
     rospy.init_node('image_combiner')
     cam_pub = rospy.Publisher("/combined_image",Image,queue_size =1)
-
     rospy.Subscriber("/usb_cam/image1",Image,callback_right)
     rospy.Subscriber("/usb_cam/image2",Image,callback_left)
     rospy.spin()
